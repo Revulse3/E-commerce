@@ -8,7 +8,6 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 
@@ -17,7 +16,7 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Layout>
-          <p>Hello,</p>
+          
           
         </Layout>
       </BrowserRouter>
