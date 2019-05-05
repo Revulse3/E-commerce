@@ -17,18 +17,21 @@ export class FormInput extends Component {
     }
 }
 
-// export class FormButton extends Component {
-//     render() {
-//         const { className, title, input, type } = this.props;
-//         return (
-//             <div className={`${className} form-button`}>
-//                 <button
-//                     className="form-button__button"
-//                     type={type}
-//                     {...input}
-//                 >{title}</button>
-//             </div>
-//         )
-//     }
-// }
+export class FormButton extends Component {
+    render() {
+        const { className, title, input, type, onClick } = this.props;
+        return (
+            <div className={`${className} form-button`}>
+                <button
+                    className="form-button__button"
+                    type={type}
+                    {...input}
+                    onClick={onClick}
+                >
+                {title}
+                </button>
+            </div>
+        )
+    }
+}
  
